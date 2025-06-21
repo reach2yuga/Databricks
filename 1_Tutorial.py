@@ -39,4 +39,14 @@ df.filter((col('Item_Fat_Content') == 'Regular') & (col('Item_Type') == 'Soft Dr
 
 # COMMAND ----------
 
+# MAGIC %md 
+# MAGIC ### Senario -2 
 
+# COMMAND ----------
+
+df.filter((col('Outlet_Size').isNull()) & (col('Outlet_Location_type') == 'Tier 1')).display()
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC ###
